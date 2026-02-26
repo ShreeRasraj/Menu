@@ -6,7 +6,16 @@
 <title>Shree Rasraj Kitchen Menu</title>
 
 <style>
-body
+
+/* FIXED BODY CSS */
+body{
+    margin:0;
+    font-family: 'Georgia', serif;
+    background:#f4efe9;
+    color:#444;
+}
+
+/* TOP BAR */
 .top-contact{
     text-align:center;
     background:#a97142;
@@ -25,13 +34,8 @@ body
 .top-contact a:hover{
     text-decoration:underline;
 }
-{
-    margin:0;
-    font-family: 'Georgia', serif;
-    background:#f4efe9;
-    color:#444;
-}
 
+/* CONTAINER */
 .container{
     max-width:900px;
     margin:50px auto;
@@ -44,10 +48,22 @@ body
     text-align:center;
 }
 
+/* UPDATED HEADING */
 .brand h1{
     font-size:40px;
     letter-spacing:4px;
     color:#a97142;
+    margin:0;
+}
+
+.byline{
+    display:block;
+    font-size:16px;
+    letter-spacing:2px;
+    color:#777;
+    margin-top:8px;
+    font-weight:normal;
+    font-style:italic;
 }
 
 .brand .subtitle{
@@ -99,7 +115,7 @@ li{
     color:#555;
 }
 
-/* Contact Section */
+/* CONTACT */
 .contact-note{
     text-align:center;
     margin-top:60px;
@@ -125,17 +141,6 @@ li{
     color:#888;
 }
 
-.toggle-btn{
-    position:fixed;
-    top:20px;
-    right:20px;
-    padding:8px 14px;
-    border:none;
-    background:#a97142;
-    color:white;
-    cursor:pointer;
-}
-
 .dark{
     background:#1f1f1f;
     color:#ddd;
@@ -148,18 +153,23 @@ li{
 .dark li{
     border-bottom:1px dotted #444;
 }
+
 </style>
 </head>
 
 <body>
 
 <div class="top-contact">
-     Call for orders: <a href="tel:8169874196">8169874196</a>
+     📞 Call for orders: <a href="tel:8169874196">8169874196</a>
 </div>
+
 <div class="container">
 
 <div class="brand">
-    <h1>SHREE RASRAJ KITCHEN</h1>
+    <h1>
+        SHREE RASRAJ KITCHEN
+        <span class="byline">by Sonal Mehta</span>
+    </h1>
     <div class="subtitle">Premium Party Catering & Bulk Delivery</div>
     <div class="tagline">
         Expertly prepared • Hygienically packed • Delivered fresh
@@ -168,7 +178,6 @@ li{
 
 <div id="menu"></div>
 
-<!-- ✅ Contact Text Added Here -->
 <div class="contact-note">
     For further price details and queries, please give us a call on 
     <a href="tel:8169874196">8169874196</a>
@@ -337,10 +346,6 @@ div.appendChild(ul);
 
 container.appendChild(div);
 });
-
-function toggleTheme(){
-document.body.classList.toggle("dark");
-}
 </script>
 
 </body>
